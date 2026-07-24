@@ -1,1 +1,12 @@
+def reemplazar_caracter(texto, viejo, nuevo):
+    """Sustituye todas las apariciones de un carácter en un texto."""
+    return texto.replace(viejo, nuevo)
 
+if __name__ == "__main__":
+    print("--- Reemplazo de Caracteres ---")
+    cadena = input("Ingresa el texto original: ")
+    buscar = input("Carácter a buscar: ")
+    reemplazo = input("Carácter de reemplazo: ")
+    
+    resultado = reemplazar_caracter(cadena, buscar, reemplazo)
+    print(f"Texto modificado: {resultado}")
