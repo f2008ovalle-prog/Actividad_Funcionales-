@@ -1,1 +1,8 @@
+def a_mayusculas(texto):
+    """Retorna la cadena ingresada convertida totalmente a mayúsculas."""
+    return texto.upper()
 
+if __name__ == "__main__":
+    print("--- Conversor a Mayúsculas ---")
+    frase = input("Ingresa un texto en minúsculas o mixto: ")
+    print(f"Resultado: {a_mayusculas(frase)}")
