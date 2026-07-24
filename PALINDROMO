@@ -1,1 +1,12 @@
+def es_palindromo(texto):
+    """Evalúa si una cadena es un palíndromo (ignora espacios y mayúsculas)."""
+    limpio = "".join(caracter.lower() for caracter in texto if caracter.isalnum())
+    return limpio == limpio[::-1]
 
+if __name__ == "__main__":
+    print("--- Verificador de Palíndromos ---")
+    cadena = input("Ingresa una palabra o frase: ")
+    if es_palindromo(cadena):
+        print(f'"{cadena}" SÍ es un palíndromo.')
+    else:
+        print(f'"{cadena}" NO es un palíndromo.')
